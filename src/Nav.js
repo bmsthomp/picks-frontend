@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { Nav, Navbar, NavItem  } from 'react-bootstrap';
 
-export default class Nav extends React.Component {
+export default class Navi extends React.Component {
 
   render() {
 
     return (
-      <ul>
-        <li><Link to="/">Picks</Link></li>
-        <li><Link to="/leaderboard">Leaderboard</Link></li>
-        <li><Link to="/logout">Logout</Link></li>
-      </ul>
+      <Navbar>
+        <Nav pullRight>
+          <NavItem><NavLink activeStyle={{ fontWeight: "bold" }} to="/" exact>Picks</NavLink></NavItem>
+          <NavItem><NavLink activeStyle={{ fontWeight: "bold" }} to="/leaderboard">Leaderboard</NavLink></NavItem>
+          <NavItem><NavLink activeStyle={{ fontWeight: "bold" }} to="/logout">Logout</NavLink></NavItem>
+        </Nav>
+      </Navbar>
     );
   }
 }
