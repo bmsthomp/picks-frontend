@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Nav from './Nav';
-import Picks from './Picks';
-import Leaderboard from './Leaderboard';
-import NoMatch from './NoMatch';
+import Nav from './Components/Nav';
+import Picks from './Containers/Picks';
+import Leaderboard from './Containers/Leaderboard';
+import NoMatch from './Containers/NoMatch';
+import MyPicks from './Containers/MyPicks';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           <div>
             <Switch>
               <Route path='/' exact component={Picks} />
+              <Route path='/mypicks' exact component={MyPicks} />
               <Route path='/leaderboard' exact component={Leaderboard} />
               <Route exact component={NoMatch} />
             </Switch>

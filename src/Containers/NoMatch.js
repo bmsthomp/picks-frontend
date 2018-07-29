@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
-import Banner from './Banner';
+import Banner from '../Components/Banner';
 
 export default class Picks extends React.Component {
 
@@ -10,7 +8,7 @@ export default class Picks extends React.Component {
     return (
 
         <Banner title="Error: 404 Page Not Found" />
-      
+
     );
   }
 }
