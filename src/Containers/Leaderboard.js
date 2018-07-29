@@ -7,7 +7,7 @@ export default class Leaderboard extends React.Component {
 
     return (
       <React.Fragment>
-        <Banner title="Picks" />
+        <Banner title="Leaderboard" />
         <div className="content">
           <table>
           leaderboard

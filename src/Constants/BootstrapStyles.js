@@ -10,11 +10,13 @@ export const TableStyle = () => {
   )
 }
 
-export const tdStyle = () => {
+export const NavbarStyle = () => {
   return (
     <style type="text/css">{`
-    .td-custom {
-        text-align: left;
+    .navbar-custom {
+        margin-bottom: 0px;
+        background-color: #eee;
+        color: black;
     }`}
     </style>
   )

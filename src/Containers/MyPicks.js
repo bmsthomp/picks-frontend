@@ -7,19 +7,16 @@ export default class MyPicks extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      myPicks: [],
+      myPicks: [
+        { id: 1, away: 'Bears', home: 'Packers' },
+        { id: 2, away: 'Falcons', home: 'Eagles' },
+        { id: 3, away: 'Bengals', home: 'Colts' },
+        { id: 4, away: 'Bills', home: 'Ravens' },
+      ],
+      working: true,
     }
     this.makePick = this.makePick.bind(this);
-  }
-
-  componentDidMount() {
-    const myPicks = [
-      { id: 1, away: 'Bears', home: 'Packers' },
-      { id: 2, away: 'Falcons', home: 'Eagles' },
-      { id: 3, away: 'Bengals', home: 'Colts' },
-      { id: 4, away: 'Bills', home: 'Ravens' },
-    ]
-    this.setState({ myPicks });
+    this.changeState = this.changeState.bind(this);
   }
 
   makePick(id, team) {
@@ -32,6 +29,10 @@ export default class MyPicks extends React.Component {
     }
 
     this.setState({ myPicks: newPicks});
+  }
+
+  changeState() {
+    this.setState({ working: !this.state.working });
   }
 
   render() {
