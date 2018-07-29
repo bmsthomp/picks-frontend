@@ -76,3 +76,8 @@ div.container: {
   margin-right: 5px !important;
   width: 100% !important;
 }
+
+.pick {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}

@@ -13,10 +13,8 @@ export default class MyPicks extends React.Component {
         { id: 3, away: 'Bengals', home: 'Colts' },
         { id: 4, away: 'Bills', home: 'Ravens' },
       ],
-      working: true,
     }
     this.makePick = this.makePick.bind(this);
-    this.changeState = this.changeState.bind(this);
   }
 
   makePick(id, team) {
@@ -29,10 +27,6 @@ export default class MyPicks extends React.Component {
     }
 
     this.setState({ myPicks: newPicks});
-  }
-
-  changeState() {
-    this.setState({ working: !this.state.working });
   }
 
   render() {
