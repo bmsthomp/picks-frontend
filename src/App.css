@@ -81,3 +81,35 @@ div.container: {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
 }
+
+.score {
+  text-align: center;
+  padding-right: 25px !important;
+}
+
+.table>thead>tr>th {
+  padding-left: 5px !important;
+}
+
+.table>tbody>tr>td {
+  padding-left: 5px !important;
+}
+
+.winner {
+  background-color: #dff0d8;
+}
+
+select {
+  display: inline-block;
+  padding: 0px 10px 0px 10px;
+}
+
+.dropdown-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.dropdownbutton {
+  margin: 10px 10px 0px 10px;
+}
